@@ -1,10 +1,10 @@
-public class GumballMachineQuarter
+public class GumballMachine
 {
 
     private int num_gumballs;
     private boolean has_quarter;
 
-    public GumballMachineQuarter( int size )
+    public GumballMachine( int size )
     {
         // initialise instance variables
         this.num_gumballs = size;
