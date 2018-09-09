@@ -8,7 +8,8 @@
 public class GumballMachineFifty extends GumballMachine
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private int total;
+    private int rem;
 
     /**
      * Constructor for objects of class GumballMachineFifty
@@ -28,7 +29,7 @@ public class GumballMachineFifty extends GumballMachine
         } 
     
         // initialise instance variables
-        x = 0;
+        
     }
 
     /**
@@ -37,9 +38,28 @@ public class GumballMachineFifty extends GumballMachine
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void insertQuarter(int coin) {
+    	this.total += coin;
+    	if (this.total >= 50)
+    	{
+    		state.insertQuarter();
+    		this.total -= 50;
+    	} else {
+    		this.rem = 50 - this.total;
+    		System.out.printf("You haven't inserted Fifty cents, Please insert %d\n", +rem);
+    	}
     }
+    public void insertQuarter() {
+        	this.total += 25;
+        	if (this.total >= 50)
+        	{
+        		state.insertQuarter();
+        		this.total -= 50;
+        	} else {
+           		this.rem = 50 - this.total;
+        		System.out.printf("You haven't inserted Fifty cents, Please insert %d\n", +rem);
+        	}
+     
+    }
+ 
 }
