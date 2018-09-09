@@ -1,0 +1,10 @@
+/GumballMachine.class
+/GumballMachineFifty.class
+/GumballMachineQuarter.class
+/GumballMachineQuarterFifty.class
+/HasQuarterState.class
+/Main.class
+/NoQuarterState.class
+/SoldOutState.class
+/SoldState.class
+/State.class
