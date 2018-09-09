@@ -1,6 +1,6 @@
 
 
-public interface State {
+public interface State  {
  
 	public void insertQuarter();
 	public void ejectQuarter();
