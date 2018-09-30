@@ -1,0 +1,19 @@
+## CRC Cards, responsibilities and collaborators
+
+1. Customer
+   -- Responsibilities:
+   	- Provide Phone Number, Guest count, Name
+	- Respond to Text
+	- Send text to Customers
+   -- Collaborators:
+   	- TableAvail
+
+
+2. TableAvail
+   -- Responsibilities
+   	- Provide Availability of table
+   	- Update observers
+   	- Calculate which customer to text based on availability and customer's guest size
+
+   -- Collaborators:
+   	- Cusomer
