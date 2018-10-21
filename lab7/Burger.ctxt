@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Burger
+comment0.text=\n\ Write\ a\ description\ of\ class\ Burger\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=d
+comment1.target=Burger(java.lang.String)
+comment2.params=varity
+comment2.target=void\ settingDiffOptions(java.lang.String[])
+comment3.params=
+comment3.target=double\ getPrice()
+comment4.params=
+comment4.target=void\ getDescription()
+numComments=5

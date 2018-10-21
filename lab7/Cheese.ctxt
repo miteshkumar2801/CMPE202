@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Cheese
+comment1.params=d
+comment1.target=Cheese(java.lang.String)
+comment2.params=varity
+comment2.target=void\ settingDiffOptions(java.lang.String[])
+comment3.params=
+comment3.target=double\ getPrice()
+comment4.params=b
+comment4.target=void\ applyDecorator(Burger)
+comment5.params=
+comment5.target=void\ getDescription()
+numComments=6

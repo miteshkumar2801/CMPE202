@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=LeafDecorator
+comment1.params=d\ p
+comment1.target=LeafDecorator(java.lang.String,\ double)
+comment2.params=
+comment2.target=void\ getDescription()
+comment3.params=c
+comment3.target=void\ addChild(Component)
+comment4.params=c
+comment4.target=void\ removeChild(Component)
+comment5.params=i
+comment5.target=Component\ getChild(int)
+comment6.params=
+comment6.target=double\ getPrice()
+numComments=7
