@@ -46,19 +46,11 @@ public class CreditCardExp implements IDisplayComponent, IKeyEventHandler,IKeyPa
 		return ; // do nothing
 	}
 	
-	 /**
-     * Attach a Key Pad Observer
-     * @param obj Observer
-     */
     public void attach( IKeyPadObserver obj ) 
     {
         observers.add( obj ) ;
     }
 
-    /**
-     * Remove Key Pad Observer
-     * @param obj Observer
-     */
     public void removeObserver( IKeyPadObserver obj )
     {
         int i = observers.indexOf(obj) ;
@@ -66,9 +58,6 @@ public class CreditCardExp implements IDisplayComponent, IKeyEventHandler,IKeyPa
             observers.remove(i) ;
     }
 
-    /**
-     * Notify all Observers of Update Event
-     */
     public void notifyObservers(int numKeys, String key )
     {
         for (int i=0; i<observers.size(); i++)

@@ -25,14 +25,14 @@ public class CreditCardCVC implements IDisplayComponent, IKeyEventHandler,IKeyPa
 
 	public void key(String ch, int cnt) {
 		if ( cnt >= 21 ) {
-			if ( cnt >= 21 && cnt <= 24 ) {  //add one more 24 to handle 456-x the x is the last input: 23-->24
+			if ( cnt >= 21 && cnt <= 24 ) {  
 				if(ch.toLowerCase().equals("x"))  {
 					cnt-=2;
 					if (cvc.length()>0) { 
 						cvc=cvc.substring(0, cvc.length()-1);
 						notifyObservers(cnt,"");
-					}else notifyObservers(cnt,"x");  //hnote: -1 means no change, but need to notify pre display component
-				} else if (cnt==24) notifyObservers(23,"");  //special handle, cnt no more than 23.
+				}else notifyObservers(cnt,"x");  
+				} else if (cnt==24) notifyObservers(23,"");  
 				else cvc += ch ;
 			} 
 			else if ( nextHandler != null )

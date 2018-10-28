@@ -1,0 +1,10 @@
+## Mitesh
+-- Used These Patterns:
+1. Observer Pattern to take care of key outputs 
+2. Chain of Responsibilities.
+
+Reason:
+Used observer pattern as key count output has to be observed by CreditCardNum, CVC and Exp
+
+
+
