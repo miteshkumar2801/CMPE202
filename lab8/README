@@ -4,7 +4,7 @@
 2. Chain of Responsibilities.
 
 Reason:
-Used observer pattern as key count output has to be observed by CreditCardNum, CVC and Exp
-
+Used observer pattern as key count notification is sent to CreditCard, CreditCardExp and CreditCardCVC.
+Used COR through adding subcomponent CreditCardNum, CreditCardCVC, CreditCardExp.
 
 
