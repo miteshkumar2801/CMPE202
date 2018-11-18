@@ -15,9 +15,9 @@ Use the Java JDK 8 Lambda function to add different sorting strategy into the li
 
 2. COR : Chain of Responsibility :: Using Predicate Function
 
-    Predicate<String> h1Tester =  (a) -> a.equalsIgnoreCase("R1");
-    Predicate<String> h2Tester  = (a) -> a.equalsIgnoreCase("R2");
-    Predicate<String> h3Tester  = (a) -> a.equalsIgnoreCase("R3");
+    Predicate<String> hand1Tester =  (a) -> a.equalsIgnoreCase("R1");
+    Predicate<String> hand2Tester  = (a) -> a.equalsIgnoreCase("R2");
+    Predicate<String> hand3Tester  = (a) -> a.equalsIgnoreCase("R3");
 
 
 
