@@ -1,4 +1,4 @@
-package chain_of_responsibility_lambda;
+package COR;
 
 import java.util.function.Predicate;
 

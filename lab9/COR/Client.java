@@ -1,4 +1,4 @@
-package chain_of_responsibility_lambda;
+package COR;
 
 import java.util.ArrayList;
 import java.util.function.Function;
@@ -15,21 +15,21 @@ public class Client {
         requests.add("R1");
         requests.add("RX");
 
-        // Predicate functions
-        Predicate<String> h1Tester =  (a) -> a.equalsIgnoreCase("R1");		
-        Predicate<String> h2Tester  = (a) -> a.equalsIgnoreCase("R2");
-        Predicate<String> h3Tester  = (a) -> a.equalsIgnoreCase("R3");
+        
+        Predicate<String> hand1Tester =  (a) -> a.equalsIgnoreCase("R1");		
+        Predicate<String> hand2Tester  = (a) -> a.equalsIgnoreCase("R2");
+        Predicate<String> hand3Tester  = (a) -> a.equalsIgnoreCase("R3");
 
    	
-        Handler h1 = new ConcreteHandler1(h1Tester) ;
-        Handler h2 = new ConcreteHandler2(h2Tester) ;
-        Handler h3 = new ConcreteHandler3(h3Tester) ;
+        Handler hand1 = new ConcreteHandler1(hand1Tester) ;
+        Handler hand2 = new ConcreteHandler2(hand2Tester) ;
+        Handler hand3 = new ConcreteHandler3(hand3Tester) ;
       	
-        h1.setSuccessor(h2);
-        h2.setSuccessor(h3);
+        hand1.setSuccessor(hand2);
+        hand2.setSuccessor(hand3);
 
      
-        requests.stream().forEach(p -> {System.out.println( "Sending "+p+"..."); h1.handleRequest(p);});
+        requests.stream().forEach(p -> {System.out.println( "Sending "+p+"..."); hand1.handleRequest(p);});
 
     }
  
